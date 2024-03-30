@@ -15,4 +15,13 @@
 4th  i have to install all te requirements 
 -->pip install -r requirements.txt
 
+
+5th i load the dataset from kaggle 
+
+6th i create a .ipynb file in the research folder and there i perform all type of EDA,FE,FS,MODEL TRAINING ,MODEL EVALUATION
+
+7th i create utils logging and exception
+
+
+
 """
