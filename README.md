@@ -20,7 +20,9 @@
 
 6th i create a .ipynb file in the research folder and there i perform all type of EDA,FE,FS,MODEL TRAINING ,MODEL EVALUATION
 
-7th i create utils logging and exception
+7th i create logger to the src constructor
+
+8th
 
 
 
