@@ -26,14 +26,14 @@
 
 
 ## 9th workflow
-1. update config.yaml
-2. update schema.yaml
-3. update params.yaml
-4. update the entity
-5. update the configuration manager in src config
-6. update the components
-7. update the pipeline
-8. update the main.py
+1. update config.yaml  #change in config.yaml file
+2. update schema.yaml  #change in schema.yaml file
+3. update params.yaml  #change in params.yaml file
+4. update the entity   #change in entity/config_entity.py file
+5. update the configuration manager in src config  #change in src\mlProject\config\configuration.py
+6. update the components   #change in dataingestion_01.ipynb file
+7. update the pipeline     #change in src\mlProject\pipeline\stage_01_data_ingestion.py file 
+8. update the main.py      #change in main.py file
 9. update the app.py
 
 
