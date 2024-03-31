@@ -55,8 +55,20 @@ There I perform all type of EDA,FE,FS,MODEL TRAINING,MODEL EVALUATION
 3. update params.yaml  
 4. update the entity   #change in entity/config_entity.py file
 5. update the configuration manager in src config  #change in src\mlProject\config\configuration.py 
-6. update the components   #change in src\mlProject\components\ddata_transformation.py
+6. update the components   #change in src\mlProject\components\data_transformation.py
 7. update the pipeline     #change in src\mlProject\pipeline\stage_03_data_transformation.py file 
+8. update the main.py      #change in main.py file
+9. update the app.py
+
+
+## 11th workflow for model traing here we train various model then we pick the best one 
+1. update config.yaml  #change in config.yaml file
+2. update schema.yaml  
+3. update params.yaml  
+4. update the entity   #change in entity/config_entity.py file
+5. update the configuration manager in src config  #change in src\mlProject\config\configuration.py 
+6. update the components   #change in src\mlProject\components\model_traning.py
+7. update the pipeline     #change in src\mlProject\pipeline\stage_04_model_trainer.py file 
 8. update the main.py      #change in main.py file
 9. update the app.py
 
