@@ -15,7 +15,9 @@ logging.basicConfig(
     format = logging_str,
 
     handlers=[
+        #logging update for the running.log file 
         logging.FileHandler(log_filepath),
+        #logging update for the console 
         logging.StreamHandler(sys.stdout)
     ]
 )

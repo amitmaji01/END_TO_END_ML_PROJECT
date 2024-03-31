@@ -22,7 +22,19 @@
 
 7th i create logger to the src constructor
 
-8th
+8th i build the utils here i write that code which we use again and again
+
+
+## 9th workflow
+1. update config.yaml
+2. update schema.yaml
+3. update params.yaml
+4. update the entity
+5. update the configuration manager in src config
+6. update the components
+7. update the pipeline
+8. update the main.py
+9. update the app.py
 
 
 
