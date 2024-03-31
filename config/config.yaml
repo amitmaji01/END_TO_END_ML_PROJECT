@@ -14,3 +14,7 @@ data_validation:
   unzip_data_dir: artifacts/data_ingestion/winequality-red.csv   # retrive the data from the unzip data 
   STATUS_FILE: artifacts/data_validation/status.txt   # then check the status of the data from the schemafile and store the output to the status file 
 
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/winequality-red.csv

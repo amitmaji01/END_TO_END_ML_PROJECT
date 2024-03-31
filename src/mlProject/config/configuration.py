@@ -1,6 +1,6 @@
 from mlProject.constants import *  # here i call all constant file path
 from mlProject.utils.common import read_yaml, create_directories   # using utils i read that file and create directory
-from mlProject.entity.config_entity import (DataIngestionConfig,DataValidationConfig) # in this line i import DataIngestionConfig from entity 
+from mlProject.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig) # in this line i import DataIngestionConfig from entity 
 
 
 #create a configure manager class where a read the config and params and schema file and create a directory
@@ -57,5 +57,17 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+    
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+        )
+
+        return data_transformation_config
 
 
