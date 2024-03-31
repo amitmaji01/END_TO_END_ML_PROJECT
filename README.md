@@ -49,19 +49,6 @@ There I perform all type of EDA,FE,FS,MODEL TRAINING,MODEL EVALUATION
 9. update the app.py
 
 
-## 10th workflow for data validation means check wheather data is valid or not 
-1. update config.yaml  #change in config.yaml file
-2. update schema.yaml  
-3. update params.yaml  
-4. update the entity   #change in entity/config_entity.py file
-5. update the configuration manager in src config  #change in src\mlProject\config\configuration.py 
-6. update the components   #change in src\mlProject\components\data_validation.py
-7. update the pipeline     #change in src\mlProject\pipeline\stage_02_data_validation.py file 
-8. update the main.py      #change in main.py file
-9. update the app.py
-
-
-
 ## 11th workflow for data transformation  means here we can build various method to do feature engineering means all preprocessing task 
 1. update config.yaml  #change in config.yaml file
 2. update schema.yaml  
