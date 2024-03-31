@@ -2,7 +2,15 @@ artifacts_root: artifacts
 
 #for data ingestion config 
 data_ingestion:
-  root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/winequality-data.zip
-  local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  root_dir: artifacts/data_ingestion    # create a directory name data_ingestion
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/winequality-data.zip  # define the source url
+  local_data_file: artifacts/data_ingestion/data.zip   # store the data as a zip formal 
+  unzip_dir: artifacts/data_ingestion   # store the data in uzip format in that directory
+
+
+
+data_validation:
+  root_dir: artifacts/data_validation  # create a directory name data_validation
+  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv   # retrive the data from the unzip data 
+  STATUS_FILE: artifacts/data_validation/status.txt   # then check the status of the data from the schemafile and store the output to the status file 
+
