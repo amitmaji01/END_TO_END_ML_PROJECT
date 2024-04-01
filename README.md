@@ -85,4 +85,12 @@ There I perform all type of EDA,FE,FS,MODEL TRAINING,MODEL EVALUATION
 9. update the app.py
 
 
+
+## 14th  i create a prediction pipline 
+there i load the model and input the data and predict 
+
+
+## 15th create user app 
+
+
 """
