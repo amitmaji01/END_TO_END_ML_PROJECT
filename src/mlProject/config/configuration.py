@@ -1,6 +1,8 @@
 from mlProject.constants import *  # here i call all constant file path
 from mlProject.utils.common import read_yaml, create_directories   # using utils i read that file and create directory
-from mlProject.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig) # in this line i import DataIngestionConfig from entity 
+from mlProject.entity.config_entity import (DataIngestionConfig,DataValidationConfig,
+                                            DataTransformationConfig,ModelTrainerConfig
+                                            ,ModelEvaluationConfig) # in this line i import DataIngestionConfig from entity 
 
 
 #create a configure manager class where a read the config and params and schema file and create a directory
@@ -95,5 +97,27 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+    
+
+
+
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        params = self.params.ElasticNet
+        schema =  self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir=config.root_dir,
+            test_data_path=config.test_data_path,
+            model_path = config.model_path,
+            all_params=params,
+            metric_file_name = config.metric_file_name,
+            target_column = schema.name
+           
+        )
+
+        return model_evaluation_config
 
 
